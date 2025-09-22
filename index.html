@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>منصة الأسلوب</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0066cc',
+              secondary: '#ff6b35',
+              dark: '#1a1a2e',
+              light: '#f8f9fa',
+              success: '#28a745',
+              danger: '#dc3545',
+              warning: '#ffc107',
+              info: '#17a2b8',
+              'bg-primary-light': '#ffffff',
+              'bg-secondary-light': '#f8f9fa',
+              'text-primary-light': '#212529',
+              'text-secondary-light': '#6c757d',
+              'border-light': '#dee2e6',
+              'card-bg-light': '#ffffff',
+              'bg-primary-dark': '#1a1a2e',
+              'bg-secondary-dark': '#16213e',
+              'text-primary-dark': '#ffffff',
+              'text-secondary-dark': '#b8bcc8',
+              'border-dark': '#2d3561',
+              'card-bg-dark': '#0f3460',
+            },
+            animation: {
+              'slide-down': 'slideDown 0.3s ease-out',
+              'slide-up-fade-out': 'slideUpFadeOut 0.5s ease-in forwards',
+            },
+            keyframes: {
+              slideDown: {
+                '0%': { transform: 'translate(-50%, -100%)', opacity: '0' },
+                '100%': { transform: 'translate(-50%, 0)', opacity: '1' },
+              },
+              slideUpFadeOut: {
+                '0%': { transform: 'translate(-50%, 0)', opacity: '1' },
+                '100%': { transform: 'translate(-50%, -100%)', opacity: '0' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.20.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
